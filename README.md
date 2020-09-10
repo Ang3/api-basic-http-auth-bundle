@@ -33,10 +33,10 @@ of the Composer documentation.
 Step 2: Configure the bundle
 ----------------------------
 
-Create the file ```config/api-basic-http-auth.yaml``` and paste the contyent below:
+Create the file ```config/ang3_api_basic_http_auth.yaml``` and paste the contyent below:
 
 ```yaml
-api_basic_http_auth: ~
+ang3_api_basic_http_auth: ~
 ```
 
 Then, edit the file ```config/packages/security.yaml``` to configure the security depending on the firewal 
