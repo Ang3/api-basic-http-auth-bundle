@@ -1,0 +1,11 @@
+###> dev ###
+/bin/
+###> dev ###
+
+###> composer ###
+/vendor/
+###< composer ###
+
+###> php-cs-fixer ###
+.php_cs.cache
+###> php-cs-fixer ###

@@ -1,0 +1,29 @@
+{
+  "name": "ang3/api-basic-http-auth-bundle",
+  "type": "symfony-bundle",
+  "homepage": "https://github.com/Ang3/api-basic-http-auth-bundle",
+  "description": "Basic HTTP authentication for your API's",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Joanis ROUANET",
+      "email": "jrouanet@agrege.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"Ang3\\Bundle\\ApiBasicHttpAuthBundle\\": "src/"}
+  },
+  "autoload-dev": {
+    "psr-4": { "Ang3\\Bundle\\ApiBasicHttpAuthBundle\\Tests\\": "tests/" }
+  },
+  "require": {
+    "php": ">=7.2.5",
+    "symfony/config": "^5.1",
+    "symfony/dependency-injection": "^5.1",
+    "symfony/security-bundle": "^5.1",
+    "symfony/translation": "^5.1"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
