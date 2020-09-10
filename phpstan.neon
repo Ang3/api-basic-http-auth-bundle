@@ -5,4 +5,4 @@ parameters:
   checkMissingIterableValueType: false
   checkGenericClassInNonGenericObjectType: false
   ignoreErrors:
-      - '#Call to an undefined method Symfony\\Component\\Config\\Definition\\Builder\\NodeDefinition\:\:children\(\)\.#'
+      #- '#Call to an undefined method Symfony\\Component\\Config\\Definition\\Builder\\NodeDefinition\:\:children\(\)\.#'
