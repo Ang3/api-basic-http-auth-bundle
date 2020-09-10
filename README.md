@@ -33,7 +33,13 @@ of the Composer documentation.
 Step 2: Configure the bundle
 ----------------------------
 
-Edit the file ```config/packages/security.yaml``` to configure the security depending on the firewal 
+Create the file ```config/api-basic-http-auth.yaml``` and paste the contyent below:
+
+```yaml
+api_basic_http_auth: ~
+```
+
+Then, edit the file ```config/packages/security.yaml``` to configure the security depending on the firewal 
 you want to secure:
 
 ```yaml
