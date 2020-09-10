@@ -47,8 +47,8 @@ security:
 You just have to be sure the user returns the plain password when the authenticator will call the user method 
 ```UserInterface::getPassword()``` for credentials checking.
 
-Step 3: User status checking
-----------------------------
+Step 3: User status checking (optional)
+---------------------------------------
 
 The bundle provides the interface ```Ang3\Bundle\ApiBasicHttpAuthBundle\Security\LockableUserInterface``` and
 it contains just one method: ```isDisabled(): bool```.
