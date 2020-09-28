@@ -18,6 +18,7 @@
   },
   "require": {
     "php": ">=7.2.5",
+    "symfony/console": "^5.1",
     "symfony/dependency-injection": "^5.1",
     "symfony/security-bundle": "^5.1",
     "symfony/translation": "^5.1"

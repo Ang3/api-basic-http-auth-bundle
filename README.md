@@ -44,11 +44,10 @@ security:
                     - Ang3\Bundle\ApiBasicHttpAuthBundle\Security\BasicHttpAuthenticator
 ```
 
-You just have to be sure the user returns the plain password when the authenticator will call the user method 
-```UserInterface::getPassword()``` for credentials checking.
+Usage
+=====
 
-Step 3: User status checking (optional)
----------------------------------------
+### User status checking (optional)
 
 The bundle provides the interface ```Ang3\Bundle\ApiBasicHttpAuthBundle\Security\LockableUserInterface``` and
 it contains just one method: ```isDisabled(): bool```.
@@ -69,5 +68,16 @@ class User implements LockableUserInterface
     }
 }
 ```
+
+### Encode Basic HTTP authentication token
+
+The authentication system is waiting for a Base64 encoded string. This bundle provides a simple command 
+to encode a username and password easily:
+
+```shell script
+php bin/console security:api:basic-http-auth-token <username> <password>
+```
+
+For example with username ```admin``` and password ```password```, the token to use is ```YWRtaW46cGFzc3dvcmQ=```.
 
 That's it!
