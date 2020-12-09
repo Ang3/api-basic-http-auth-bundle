@@ -4,7 +4,7 @@ namespace Ang3\Bundle\ApiBasicHttpAuthBundle\Security;
 
 use Symfony\Component\Security\Core\User\UserInterface as BaseUserInterface;
 
-interface LockableUserInterface extends BaseUserInterface
+interface LockableUserInterface extends BaseUserInterface, ApiUserInterface
 {
     /**
      * Returns TRUE if the user account is disabled.
