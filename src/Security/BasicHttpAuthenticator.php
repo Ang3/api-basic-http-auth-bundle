@@ -77,7 +77,7 @@ class BasicHttpAuthenticator extends AbstractGuardAuthenticator
         }
 
         if (!$user instanceof ApiUserInterface) {
-            throw new \LogicException('The user class "%s" must implements interface "%s" to be used with the basic authenticator.');
+            throw new \LogicException(sprintf('The user class "%s" must implements interface "%s" to be used with the basic authenticator.', get_class($user), ApiUserInterface::class));
         }
 
         return $credentials['api_key'] === $user->getApiKey();
