@@ -52,7 +52,7 @@ class BasicHttpAuthenticator extends AbstractGuardAuthenticator
 
         return [
             'username' => $credentials[0] ?? '',
-            'api_key' => $credentials[1] ?? '',
+            'password' => $credentials[1] ?? '',
         ];
     }
 
@@ -76,11 +76,7 @@ class BasicHttpAuthenticator extends AbstractGuardAuthenticator
             throw $exception;
         }
 
-        if (!$user instanceof ApiUserInterface) {
-            throw new \LogicException(sprintf('The user class "%s" must implements interface "%s" to be used with the basic authenticator.', get_class($user), ApiUserInterface::class));
-        }
-
-        return $credentials['api_key'] === $user->getApiKey();
+        return $credentials['password'] === $user->getPassword();
     }
 
     /**
