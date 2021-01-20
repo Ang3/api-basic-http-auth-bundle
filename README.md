@@ -38,31 +38,10 @@ you want to secure:
 
 ```yaml
 security:
-        main:
+        main: # your firewall
             guard:
                 authenticators:
                     - Ang3\Bundle\ApiBasicHttpAuthBundle\Security\BasicHttpAuthenticator
-```
-
-Usage
-=====
-
-The authenticator will check credentials from a username and API key as password.
-That's why you just have to ensure that your user class extends the interface 
-```Ang3\Bundle\ApiBasicHttpAuthBundle\Security\ApiUserInterface```.
-
-```php
-use Ang3\Bundle\ApiBasicHttpAuthBundle\Security\ApiUserInterface;
-
-class User implements ApiUserInterface
-{
-    // ...
-
-    public function getApiKey(): ?string
-    {
-        // TODO: Implement getApiKey() method.
-    }
-}
 ```
 
 ### User status checking (optional)
